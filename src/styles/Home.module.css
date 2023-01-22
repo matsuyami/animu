@@ -1,0 +1,49 @@
+.home__hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url('../assets/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+}
+
+.home__header {
+  font-family: var(--ff-header);
+  font-size: var(--fs-xl);
+  text-transform: uppercase;
+}
+
+.home__explore {
+  margin-top: var(--spacer-sm);
+}
+
+.home__wave {
+  position: absolute;
+  bottom: 19.9%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.home__wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 89px;
+}
+
+.home__wave .home__waveFill {
+  fill: #ebebeb;
+}
